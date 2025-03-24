@@ -1,0 +1,81 @@
+#built-in data types
+
+# Numeric data types - 3 types(INT,FLOAT,COMPLEX)
+x=10
+print(type(x))
+y=10.5
+print(type(y))
+z=3+4j
+print(type(z))
+
+#String - Is a sequence of characters enclosed in single,double, or triple quotes
+text="Hello Python!"
+print(type(text))
+
+#Multiline string
+multi_line='''This is
+a multiline
+string'''
+print(multi_line)
+print(type(multi_line))
+
+#string operations
+s="Python"
+print(s[0])     #indexing
+print(s[-1])    #negative indexing
+print(s[0:3])   #slicing- return a range of characters 
+print(s[2:5])   #slicing -characters from pos 2 to 5 (5 not included)
+print(s[:5])
+print(s[2:])
+print(s.upper()) 
+print(s.lower())
+print(len(s))
+
+#check string - check if a certain phrase or character is present in a string using'in' keyword
+txt="The best things in life are free!"
+print("free" in txt)
+
+#Boolean - t or f
+a=True
+b=False
+print(type(a))
+print(5>3)
+print(5==3)
+
+#List - is an ordered,mutable(changeable) collection of items.It can contain different data types
+my_list=[10,"Hello",3.14,True]
+print(type(my_list))
+print(my_list[0])   #Accessing elements
+my_list[1]="Python"  #modifying list
+print(my_list)     
+
+#list operations
+my_list.append(50)  #add an ele
+my_list.remove(3.14)
+print(my_list)
+
+#Tuple -similar to list but immutable(not changed),cant modify
+my_tuple=(10,"python",3.14)
+print(type(my_tuple))
+print(my_tuple[1])
+
+#set - unordered collection of unique ele
+my_set={1,2,3,4,4,2}
+print(my_set)   #duplicates removed
+my_set.add(5)  #adding ele
+print(my_set)
+my_set.remove(3)
+print(my_set)
+
+#Dictionary(dict) - stores data in key value pair
+my_dict={"name":"Alice","age":25,"city":"NewYork"}
+print(type(my_dict))
+print(my_dict["name"]) #accessing values
+my_dict["age"]=26
+print(my_dict)  #modifying
+my_dict["country"]="USA" #adding new key-value pair
+print(my_dict)
+
+#NONE type - represents the absence of a value or a null value
+x=None
+print(type(x))
