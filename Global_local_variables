@@ -15,3 +15,4 @@ def modify_global():
     x=20
 modify_global()
 print(x)
+
