@@ -1,0 +1,6 @@
+x="global" #declared outside a function and can be accesed anywhere
+def my_function():
+    x="local" #declared inside fun() only be accessed within that fun()
+    print("inside function:", x)
+my_function () #global
+print ("outside function:", x)
