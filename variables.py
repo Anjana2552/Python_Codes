@@ -1,4 +1,16 @@
-#python Variables
+
+a,b,c=5,"python",3.14
+print(b)
+b=20    
+print(b)
+print(type(b))
+
+m=(10,"python",2.1)
+print(m)
+print(m[1])
+m[1]=20
+print(m[1])
+ #python Variables
 #no command for declaring a variable
 x = 5
 y = "Python"
@@ -29,4 +41,6 @@ x, y, z = "Orange", "Banana", "Cherry"
 print(x)
 print(y)
 print(z)
+
+
 
